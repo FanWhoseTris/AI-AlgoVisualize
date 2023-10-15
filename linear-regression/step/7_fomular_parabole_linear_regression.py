@@ -27,7 +27,7 @@ A = np.concatenate((A, ones), axis =1)
 x = np.linalg.inv(A.transpose().dot(A)).dot(A.transpose()).dot(b)
 
 # Test data to draw
-x0 = np.linspace(1,25,10000) #tao 1 chuoi cac so li ti tu 1 den 25 gom co tat ca la 10000 diem
+x0 = np.linspace(1,25,10000)
 y0 = x[0][0]*x0*x0+ x[1][0]*x0 + x[2][0]
 
 plt.plot(x0,y0)

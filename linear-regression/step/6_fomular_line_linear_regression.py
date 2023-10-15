@@ -20,7 +20,7 @@ ones = np.ones((A.shape[0],1), dtype=np.int8)
 A = np.concatenate((A, ones), axis =1)
 
 # Use fomular
-x = np.linalg.inv(A.T.dot(A)).dot(A.T).dot(b)
+x = np.linalg.inv(A.transpose().dot(A)).dot(A.transpose()).dot(b)
 
 # Test data to draw
 x0 = np.array([[1,46]]).T
